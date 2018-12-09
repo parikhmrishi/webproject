@@ -1,0 +1,124 @@
+::webkit-scrollbar{
+    display:none;
+}
+
+.zero {
+    background: #2e2f34;
+    color: #fff;
+    margin: 0;
+}
+
+.title{
+    font-size:34px;
+    text-decoration:bold;
+    margin-top:5px;
+    color:#8c716e;
+    display:block;
+    padding-top:10px;
+
+}
+
+.fix {
+    position: fixed;
+    top: -5px;
+    background-color: #2e2f34;
+    padding: 0 50%;
+    padding-top:10px;
+}
+.fixc {
+    position: fixed;
+    top: -5px;
+	z-index:999;
+    background-color: #2e2f34;
+    padding-right: 8%;
+    padding-left:5%;
+    padding-top:20px;
+    padding-bottom:15px;
+    font-size:20px;
+    text-decoration:bold;
+}
+
+.equation{
+	display:block;
+	background-color:#8d726f;
+	margin:10px 0px;
+    font-style:italic;
+    text-align:center;
+    font-size:16px;
+	padding:10px;
+	
+}
+
+.sidebar  {
+    width: 20%;
+    height:100%;
+    padding:20px;
+    margin-top: 5px;
+     display:inline-block;
+     float:left;
+     position: fixed;
+     overflow-y:scroll;
+     box-shadow:5px 0 5px -2px #383539;
+   
+}
+
+.cont {
+    height:500px;
+    padding:50px;
+    padding-top:80px;
+     display:inline-block;
+     width:75%;
+     float:right;
+     overflow:none;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+
+ol > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+}
+
+ol > li:before {
+    content: counters(item, ".");
+    display: table-cell;
+    padding-right: 0.6em;
+}
+
+li ol > li {
+    margin: 0;
+}
+
+li ol > li:before {
+    content: counters(item, ".");
+	
+}
+
+a{
+	text-decoration:none !important;
+	color:#FFF;
+	
+}
+a:hover,a:active,a:focus{
+	color:#AFAFAF;
+}
+sup{
+	z-index:-5;
+}
+
+p{
+	text-align:justify;
+}
+
+table, td, th {
+    border:2px solid #9f9f9f;
+    collapse:border-collapse;
+    text-align:center;
+    padding: 5px 10px;
+}

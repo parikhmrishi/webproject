@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+      
+  <title>Login</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/login.css">
+      <script>
+          history.pushState(null,null,location.href);
+          window.onpopstate=function()
+          {
+              history.go(1);
+              
+          };
+      </script>
+
+  </head>
+
+<body>
+
+  <body class="align">
+      <div class="brand-nav">
+          <img id="wiki-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/103px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo">
+              <h4 class="brand-name" align="center">Wikipedia Viewer</h4>
+              </div>
+
+  <div class="grid">
+
+    <form action="login.php" method="GET" class="form login">
+
+      <div class="form__field">
+          
+        <input id="login__username" type="text" name="email" class="form__input" placeholder="Username" required>
+            
+      </div>
+
+      <div class="form__field">
+          
+        <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
+            
+      </div>
+
+      <div class="form__field">
+          
+        <input type="submit" value="Sign In">
+            
+      </div>
+
+    </form>
+
+    <p class="text--center"><a href="#">Forgot Password?</a>&nbsp;&nbsp;&nbsp; <a href="#">New User</a></p>
+
+  </div>
+
+</body>
+  
+</html>
