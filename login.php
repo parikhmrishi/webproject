@@ -17,9 +17,9 @@
     }
     if($pass!=$password)
     {
-        header("location:login.html");
+        header("location:index.html");
     }
     else{
-        header("location:index.html");
+        header("location:Wikipedia.html");
     }
 ?>
